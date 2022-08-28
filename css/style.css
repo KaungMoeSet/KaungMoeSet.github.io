@@ -1,0 +1,336 @@
+/* import fonts  from fonts.css file*/
+@import url('font.css');
+@import url('/partials/variables.css');
+
+.navbar .navbar-brand {
+    padding: 0 0 0 3rem;
+    font-family: var(--silkscreen);
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.main_menu .navbar {
+    padding: 1rem 0;
+    box-shadow: var(--box-shadow);
+}
+
+.main_menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--silkscreen);
+    padding: 1rem 2rem;
+    color: var(--title-color);
+}
+
+.header_area .main_menu .navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main_menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*========================== End Navigation ==========================*/
+
+/*========================== Start Banner ==========================*/
+.site-main .full-height{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 80px;
+}
+
+.site-main .site-banner .site-title h5 {
+    font-family: var(--space_mono);
+}
+
+.site-main .site-banner .site-title h5::after {
+    content: "";
+    height: 2px;
+    width: 50vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.site-main .site-banner .site-title .name {
+    font-family: var(--dynapuff);
+    color: rgb(166, 97, 231);
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title .extra {
+    font-family: var(--silkscreen);
+    color: burlywood;
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title .container .social a>i {
+    font-size: 32px;
+    padding: 1rem;
+    color: black;
+}
+
+.site-main .site-banner .site-title .container .social a>i:hover {
+    cursor: default;
+    transform: translateY(5px);
+    color: blueviolet;
+}
+
+
+.site-main .site-banner .site-title .myintro {
+    font-family: var(--baloo_2);
+    font-size: 1.9rem;
+}
+
+.site-main .site-banner .site-title .button {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.site-main .site-banner .site-title .button:hover {
+    background: blueviolet;
+    color: whitesmoke;
+    background-clip: padding-box;
+}
+
+.site-main .site-banner .site-title .button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: black;
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+/*========================== End Banner ==========================*/
+
+/*========================== Start About ==========================*/
+.site-main .about-area .site-title h2 {
+    font: normal bold 49px/60px var(--dynapuff);
+    letter-spacing: 4px;
+}
+
+.site-main .about-area .site-title h2 .abt-me {
+    font-family: var(--dynapuff);
+    color: blueviolet;
+}
+
+.site-main .about-area .site-title h2::after {
+    content: "";
+    height: 2px;
+    width: 30vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.site-main .about-area .site-title .paragraph>p {
+    font-family: var(--baloo_2);
+    font-size: 20px;
+    /* padding: 1rem 0 0 5rem; */
+}
+
+.site-main .about-area .innerpara bold {
+    font-family: var(--dynapuff);
+    color: blueviolet;
+}
+
+.site-main .about-area .paragraph .tech-skill ul {
+    font-family: var(--dynapuff);
+    font-size: 17px;
+    color: blueviolet;
+}
+
+.site-main .about-area .paragraph .tech-skill ul li::before {
+    content: "\2022";
+    color: crimson;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+/*========================== End About ==========================*/
+
+/*========================== Start Portfolio ==========================*/
+.site-main .portfolio-area .site-title h2 {
+    color: blueviolet;
+    font: normal bold 50px var(--dynapuff);
+    letter-spacing: 4px;
+    padding-bottom: 2rem;
+}
+
+.site-main .portfolio-area .site-title h2::after {
+    content: "";
+    height: 2px;
+    width: 30vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.site-main .portfolio-area .site-title ul .element:hover {
+    cursor: default;
+    transform: translateY(-10px);
+    border-color: blueviolet;
+}
+
+.site-main .portfolio-area .site-title ul .element:hover > .project-inner h3 {
+    color: blueviolet;
+}
+
+.site-main .portfolio-area .project-inner h3 {
+    font-family: var(--baloo_2);  
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.site-main .portfolio-area .project-inner .project-description {
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 1.5rem;
+}
+
+.site-main .portfolio-area .project-inner .folder i{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.site-main .portfolio-area .project-top a>i {
+    font-size: 30px;
+    color: black;
+}
+
+.site-main .portfolio-area .project-top a>i:hover {
+    color: blueviolet;
+}
+
+.site-main .portfolio-area .site-title footer ul li {
+    font-family: var(--dynapuff);
+    font-size: 17px;
+    color: blueviolet;
+}
+/*========================== End Portfolio ==========================*/
+
+/*========================== Start Contact ==========================*/
+.site-main .contact-area .site-title h2 {
+    color: blueviolet;
+    font: normal bold 50px var(--dynapuff);
+    letter-spacing: 4px;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 936px) {
+    .site-main .contact-area .site-title h2::before {
+        content: "";
+        height: 2px;
+        width: 23vw;
+        background: black;
+        display: inline-block;
+        margin-right: 5%;
+    }
+    .site-main .contact-area .site-title h2::after {
+        content: "";
+        height: 2px;
+        width: 23vw;
+        background: black;
+        display: inline-block;
+        margin-left: 5%;
+    }
+  }
+
+.site-main .contact-area .site-title .left-contact h4{
+    color: blueviolet;
+    font-family: var(--baloo_2);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.site-main .contact-area .site-title .left-contact h4 span{
+    color: black;
+}
+.site-main .contact-area .site-title .left-contact  .contact-info {
+    padding-bottom: 2rem;
+}
+
+.site-main .contact-area .site-title .left-contact .contact-item {
+    background-color: rgba(227, 226, 236, 0.205);
+    border-radius: 15px;
+    font-family: var(--roboto);
+}
+
+.site-main .contact-area .site-title .left-contact .contact-item i{
+    padding-right: 10px;
+}
+
+.site-main .contact-area .site-title .right-contact .error{
+    color: red;
+}
+.site-main .contact-area .site-title .right-contact .error-border{
+    border-bottom: 1px solid red;
+}
+#success{
+    color: #28a745;
+}
+
+.site-main .contact-area .site-title .social a>i {
+    font-size: 32px;
+    padding: .5rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+.site-main .contact-area .site-title .social a>i:hover {
+    cursor: default;
+    transform: translateY(5px);
+    color: blueviolet;
+}
+
+.site-main .contact-area .site-title .button {
+    padding: .7rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    background: whitesmoke;
+    background-clip: padding-box;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.site-main .contact-area .site-title .button:hover {
+    background: blueviolet;
+    color: whitesmoke;
+    background-clip: padding-box;
+}
+
+.site-main .contact-area .site-title .button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+/*========================== End Contact ==========================*/
